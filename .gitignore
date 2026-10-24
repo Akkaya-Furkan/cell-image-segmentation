@@ -1,6 +1,7 @@
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+data/
+*.zip
 .env
-.ipynb_checkpoints/
-data/raw/

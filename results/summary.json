@@ -1,0 +1,57 @@
+{
+  "seed": 25,
+  "device": "cpu",
+  "threads": 4,
+  "epochs": 40,
+  "model_parameters": 29617,
+  "counts": {
+    "train": 24,
+    "validation": 8,
+    "test": 12
+  },
+  "unique_image_hashes": 44,
+  "unique_mask_hashes": 44,
+  "chosen_thresholds": {
+    "watershed": 0.8,
+    "unet": 0.5
+  },
+  "best_epoch": 38,
+  "methods": {
+    "watershed": {
+      "iou": 0.8183567659040669,
+      "dice": 0.8985634059479001,
+      "ap50": 0.8009125043232787,
+      "ap50_95": 0.514975705796166
+    },
+    "unet": {
+      "iou": 0.8474235479020714,
+      "dice": 0.9156085277806159,
+      "ap50": 0.7835861136681833,
+      "ap50_95": 0.5475047557210704
+    }
+  },
+  "test_reference_instances": 392,
+  "prediction_masks": 24,
+  "feature_rows": 1122,
+  "overlay_figures": 3,
+  "training_seconds": 48.81550008899649,
+  "total_seconds": 52.168103875999805,
+  "peak_rss_mib": 678.05859375,
+  "platform": "Linux-7.2.11-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "python": "3.11.17",
+  "versions": {
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "scikit-image": "0.24.0",
+    "tifffile": "2024.9.20",
+    "matplotlib": "3.9.2"
+  },
+  "acceptance": {
+    "split_counts": true,
+    "evaluation_rows": true,
+    "dice_target": true,
+    "prediction_masks": true,
+    "overlays": true
+  }
+}
